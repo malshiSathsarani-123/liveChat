@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="553.0" prefWidth="255.0" stylesheets="@../style/Style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.liveChat.controller.CreateAccountFormController">
+   <children>
+      <ImageView fitHeight="562.0" fitWidth="253.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/createAcountform.jpg" />
+         </image>
+      </ImageView>
+      <JFXButton layoutX="157.0" layoutY="450.0" onAction="#btnSaveOnAction" prefHeight="44.0" prefWidth="84.0" style="-fx-background-color: #6055DB;" styleClass="edge-button" stylesheets="@../style/Style.css" text="SAVE" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="7.0" layoutY="450.0" onAction="#btnBackOnAction" prefHeight="44.0" prefWidth="84.0" style="-fx-background-color: #6055DB;" styleClass="edge-button" stylesheets="@../style/Style.css" text="Back" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </JFXButton>
+      <TextField fx:id="txtFname" layoutX="27.0" layoutY="230.0" onAction="#txtFnameOnAction" opacity="0.39" prefHeight="14.0" prefWidth="200.0" promptText="User Name" styleClass="edge-button" stylesheets="@../style/Style.css">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtMail" layoutX="29.0" layoutY="314.0" onAction="#txtMailOnAction" opacity="0.49" prefHeight="30.0" prefWidth="194.0" promptText="Mail" styleClass="edge-button" stylesheets="@../style/Style.css">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtContact" layoutX="28.0" layoutY="274.0" onAction="#txtContactOnAction" opacity="0.25" prefHeight="30.0" prefWidth="200.0" promptText="Contact" styleClass="edge-button" stylesheets="@../style/Style.css">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </TextField>
+      <PasswordField fx:id="txtPassword" layoutX="27.0" layoutY="354.0" onAction="#txtPasswordOnAction" opacity="0.58" prefHeight="31.0" prefWidth="174.0" promptText="Passwoed" styleClass="edge-button" stylesheets="@../../../../../../LayeredArchitecture/LayerdArchitectureCourswork/src/main/resources/style/Style.css">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </PasswordField>
+      <PasswordField fx:id="txtReTypePassword" layoutX="23.0" layoutY="408.0" onAction="#txtReTypePasswordOnAction" opacity="0.45" prefHeight="35.0" prefWidth="184.0" promptText="ReType Password" styleClass="edge-button" stylesheets="@../../../../../../LayeredArchitecture/LayerdArchitectureCourswork/src/main/resources/style/Style.css">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </PasswordField>
+   </children>
+</AnchorPane>

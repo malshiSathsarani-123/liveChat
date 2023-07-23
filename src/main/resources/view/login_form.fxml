@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="582.0" prefWidth="258.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.liveChat.controller.LoginFormController">
+   <children>
+      <ImageView fitHeight="582.0" fitWidth="273.0" layoutX="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/you need to Log In first.gif" />
+         </image>
+      </ImageView>
+      <TextField fx:id="txtUserName" layoutX="25.0" layoutY="354.0" onAction="#txtUserNameOnAction" prefHeight="42.0" prefWidth="225.0" promptText="UserName" />
+      <JFXButton layoutX="85.0" layoutY="467.0" onAction="#loginBtnOnAction" prefHeight="42.0" prefWidth="87.0" text="Login" textFill="#cd1919">
+         <font>
+            <Font size="22.0" />
+         </font></JFXButton>
+      <PasswordField fx:id="txtPassword" layoutX="25.0" layoutY="407.0" onAction="#txtPasswordOnAction" prefHeight="42.0" prefWidth="225.0" promptText="Password" />
+      <JFXButton layoutX="172.0" layoutY="526.0" onAction="#btnSignOnAction" prefHeight="42.0" prefWidth="81.0" text="SingIn" />
+   </children>
+</AnchorPane>

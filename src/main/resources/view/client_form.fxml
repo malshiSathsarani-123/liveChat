@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="653.0" prefWidth="342.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.liveChat.controller.ClientFormController">
+   <children>
+      <JFXButton contentDisplay="GRAPHIC_ONLY" layoutX="321.0" layoutY="591.0" onAction="#sendBtnOnAction" prefHeight="63.0" prefWidth="62.0" text="Button">
+         <graphic>
+            <ImageView fitHeight="50.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/img_1.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <TextField fx:id="txtMsg" layoutX="51.0" layoutY="601.0" prefHeight="42.0" prefWidth="276.0" styleClass="edge-button" stylesheets="@../style/Style.css" />
+      <VBox fx:id="vBox" layoutY="49.0" prefHeight="544.0" prefWidth="379.0" style="-fx-background-color: #29D07C;" />
+      <JFXButton contentDisplay="GRAPHIC_ONLY" layoutY="600.0" onAction="#btnEmojiOnAction" prefHeight="42.0" prefWidth="62.0" styleClass="edge-img" stylesheets="@../style/Style.css" text="i">
+         <font>
+            <Font size="19.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="42.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/img.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <AnchorPane fx:id="emojiAnchorpane" layoutX="25.0" layoutY="405.0" prefHeight="190.0" prefWidth="138.0">
+         <children>
+            <GridPane fx:id="emojiGridpane" layoutX="-6.0" layoutY="21.0" prefHeight="173.0" prefWidth="167.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="49.0" minWidth="0.0" prefWidth="0.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="123.0" minWidth="10.0" prefWidth="123.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+            </GridPane>
+         </children>
+      </AnchorPane>
+      <HBox fx:id="hBox" layoutX="1.0" prefHeight="43.0" prefWidth="379.0">
+         <children>
+            <ImageView fitHeight="43.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/img_4.png" />
+               </image></ImageView>
+            <Label fx:id="lblName" prefHeight="42.0" prefWidth="162.0" textFill="#5038c9">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <JFXButton contentDisplay="GRAPHIC_ONLY" layoutX="271.0" layoutY="600.0" onAction="#imageSendOnAction" prefHeight="42.0" prefWidth="50.0" styleClass="edge-button" stylesheets="@../style/Style.css" text="hi">
+         <graphic>
+            <ImageView fitHeight="27.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true" styleClass="edge-img">
+               <image>
+                  <Image url="@../img/img_5.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton contentDisplay="GRAPHIC_ONLY" layoutX="223.0" layoutY="601.0" onAction="#btnLettersOnAction" prefHeight="42.0" prefWidth="62.0" styleClass="edge-img" stylesheets="@../style/Style.css" text="i">
+         <font>
+            <Font size="19.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="32.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/img_6.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <AnchorPane fx:id="letterAnchopane" layoutX="179.0" layoutY="415.0" prefHeight="194.0" prefWidth="81.0">
+         <children>
+            <GridPane fx:id="letterGridpane" prefHeight="173.0" prefWidth="167.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="49.0" minWidth="0.0" prefWidth="0.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="123.0" minWidth="10.0" prefWidth="123.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+            </GridPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
